@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> ubuntu Apache WebServer </title>
+</head>
+
+<body>
+    <h1> ubuntu Apache WebServer </h1>
+    <h2> Test Connection </h2>
+    <h3> Collaboration ! </h3>
+    <h4> 개발자 김OO 수정 </h4>
+    <h5> </h5>
+    
+    <h1> localhost 또는 ifconfig 명령으로 ip 주소 확인 후 접속...</h1>
+
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
+    <p> Integer nibh tellus, tristique quis blandit quis, consequat in nunc. </p>
+    <p> Nam molestie placerat ligula, quis rutrum risus pellentesque id. </p>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+자체서버 = localhost
+localhost = 127.0.0.1
+if config 192.168.240.132(localhost 자리에 ifconfig에서 나온 ip주소를 그대로 넣어도 됨)
+
+localhost/~user (확장했을때)
+
+
+ubuntu - ctrl+c = 중단
+vi 수정하지않고 나갈때 esc -> :q! 
+vi 전부 다 지우기 d + shift+g
+아파치에서 인덱스파일만 바꾸면 웹서버 가능
+설정을 바꾸면 아파치 재시작해야됨  (systemctl stop , start)
+chmod 701 .
+chmod 701 파일명(index.html)
+그누보드5에서 게시판 다운받아쓰기
+
+
+create table st_info ( ST_ID int, NAME varchar(20), DEPT varchar(25)) default charset =urf8; 
+
+create table st_grade ( ST_ID int, ubuntu int, DB int );
+
+insert into st_info values( 101, '김도현', 'HTML5' );
+insert into st_info values( 102, '이아진', 'ubuntu' );
+insert into st_info values( 103, '김경돈', 'Server' );
+
+insert into st_grade values( 101, '90', '95' );
+insert into st_grade values( 102, '90', '94' );
+insert into st_grade values( 103, '90', '95' );
+
+기본키 설정
+alter table st_info modify ST_ID int Not Null;
+alter table st_grade modify ST_ID int Not Null;
+
+alter table st_info add constraint pk_stinfo primary key(ST_ID);
+alter table st_grade add constraint pk_stgrade primary key(ST_ID);
+
+create table st_grade (ST_ID int Not NULL primary key, ubuntu int, DB int)
+
+select NAME, DEPT from st_info where ST_ID = 103;
+
+update st_grade set DB = 100 where ST_ID = 101;
+
+create table st_LVL ( ST_ID int Not NULL primary key, point int );
+
+explain st_LVL;
+
+insert info st_LVL values ( 101, 100000 );
+insert info st_LVL values ( 102, 100001 );
+insert info st_LVL values ( 103, 100002 );
+
+alter table st_info add LVL int;
+
+update st_info set LVL=999 where ST_ID = 101;
+update st_info set LVL=999 where ST_ID = 102;
+update st_info set LVL=999 where ST_ID = 103;
+
+
+select 101자리는 이름

@@ -1,0 +1,11 @@
+이름:Terminal
+gnome-terminal
+단축기: alt+ctrl+t 설정
+
+setfont sun12x22
+
+windows Server
+pw : 1234!a
+
+ubunto 
+pw : 1234
